@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let testarray = [0,1,24,34,56];
+        function printMaxMinAverageArrayVals(arr){
+            let average;
+            if(arr[0] > arr[1] && arr[0] > arr[2] && arr[0] > arr[3] && arr[0] > arr[4]  ){
+               alert(`${arr[0]} is the maximum array element`);
+           }
+           if(arr[1] > arr[0] && arr[1] > arr[2] && arr[1] > arr[3] && arr[1] > arr[4]  ){
+                alert(`${arr[1]} is the maximum array element`);
+           }
+           if(arr[2] > arr[0] && arr[2] > arr[1] && arr[2] > arr[3] && arr[2] > arr[4]  ){
+                alert(`${arr[2]} is the maximum array element`);
+           }
+           if(arr[3] > arr[0] && arr[3] > arr[1] && arr[3] > arr[2] && arr[3] > arr[4]  ){
+                alert(`${arr[3]} is the maximum array element`);
+           }
+           if(arr[4] > arr[0] && arr[4] > arr[1] && arr[4] > arr[2] && arr[4] > arr[3]  ){
+                alert(`${arr[4]} is the maximum array element`);
+           }
+           if(arr[0] < arr[1] && arr[0] < arr[2] && arr[0] < arr[3] && arr[0] < arr[4]  ){
+               alert(`${arr[0]} is the minimum array element`);
+           }
+           if(arr[1] < arr[0] && arr[1] < arr[2] && arr[1] < arr[3] && arr[1] < arr[4]  ){
+                alert(`${arr[1]} is the minimum array element`);
+           }
+           if(arr[2] < arr[0] && arr[2] < arr[1] && arr[2] < arr[3] && arr[2] < arr[4]  ){
+                alert(`${arr[2]} is the minimum array element`);
+           }
+           if(arr[3] < arr[0] && arr[3] < arr[1] && arr[3] < arr[2] && arr[3] < arr[4]  ){
+                alert(`${arr[3]} is the minimum array element`);
+           }
+           if(arr[4] < arr[0] && arr[4] < arr[1] && arr[4] < arr[2] && arr[4] < arr[3]  ){
+                alert(`${arr[4]} is the minimum array element`);
+           }
+           average = ((arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) / 5);
+           alert(`The average of the array elements is ${average}`)
+        }
+        printMaxMinAverageArrayVals(testarray);
+    </script>
+</body>
+</html>
