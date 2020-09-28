@@ -21,14 +21,19 @@
         <a href="zeroOutNeg.html">Zero out Negative Values |</a>
         <a href="returnOddArray.html">Return Odd Array |</a>
     </nav>
+
     <script>
-        let num = [1,4,5,4,7,8,30];
-        function printArrayVals(arr){
-            for (let i = 0; i < arr.length; i++) {
-                document.write(`${arr[i]}<br>`)
+       
+        function returnOddsArray1To255(){
+            let arr = [];
+            for (let i = 0; i <= 255; i++) {
+                if(i % 2 == 1){
+                arr.push(i);
+                }
             }
+            return arr;
         }
-        printArrayVals(num);
+        document.write(returnOddsArray1To255());
     </script>
 </body>
 </html>
