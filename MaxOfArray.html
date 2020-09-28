@@ -6,25 +6,31 @@
     <title>Print Max of Array</title>
 </head>
 <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1"></span>
+        <a href="index.html">Print 1 to 255 |</a>
+        <a href="printArrayValues.html">Print all Array Values |</a>
+        <a href="averageofArray.html">Average of Array |</a>
+        <a href="max,MinandAverage.html">Max, Min And Average |</a>
+        <a href="maxOfArray.html">Max of Array |</a>
+        <a href="odd1-255.html">Odd 1-255 |</a>
+        <a href="printIntAndSum0-255.html">Print Int and Sum from 0-255 |</a>
+        <a href="shiftValuesLeft.html">Shift Values Left |</a>
+        <a href="squareArrayElements.html">Square Array Elements |</a>
+        <a href="swapStringsForNeg.html">Swap Strings for Negative Elements |</a>
+        <a href="zeroOutNeg.html">Zero out Negative Values |</a>
+    </nav>
     <script>
         let students = [1,2,3,4,5];
         alert(`The elements of the test array are [1,2,3,4 and 5]`);
         function printMaxOfArray(arr){
-           if(arr[0] > arr[1] && arr[0] > arr[2] && arr[0] > arr[3] && arr[0] > arr[4]  ){
-               return arr[0];
-           }
-           if(arr[1] > arr[0] && arr[1] > arr[2] && arr[1] > arr[3] && arr[1] > arr[4]  ){
-               return arr[1];
-           }
-           if(arr[2] > arr[0] && arr[2] > arr[1] && arr[2] > arr[3] && arr[2] > arr[4]  ){
-               return arr[2];
-           }
-           if(arr[3] > arr[0] && arr[3] > arr[1] && arr[3] > arr[2] && arr[3] > arr[4]  ){
-               return arr[3];
-           }
-           if(arr[4] > arr[0] && arr[4] > arr[1] && arr[4] > arr[2] && arr[4] > arr[3]  ){
-               return arr[4];
-           }
+          let largest = arr[0];
+          for (let i = 1; i < arr.length; i++){
+          if(arr[i] > largest){
+              largest = arr[i];
+          }
+          }
+          return largest;
         }
         alert(`The maximum number in the array is ${printMaxOfArray(students)}`);
     </script>
