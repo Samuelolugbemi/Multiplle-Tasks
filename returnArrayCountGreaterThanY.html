@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Print and sum 0-255</title>
+    <title>Document</title>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -23,17 +23,19 @@
         <a href="returnArrayCountGreaterThanY.html">Return Odd Array |</a>
     </nav>
     <script>
-        printIntAndSum0To255();
-        function printIntAndSum0To255(){
-            let sum = 0;
-            for (let i = 0; i <=255; i++) {
-                document.write(`${i}<br>`)
-                sum = sum + i;
-                document.write(`sum so far is${sum}<br>`)
-                
+        let testArray = [1,2,3,4,5]
+        let y;
+        function returnArrayCountGreaterThanY(arr,y){
+            let count = 0;
+            for (let i = 0; i < arr.length; i++){
+                if(arr[i] > 0){
+                    count++
+                }
             }
+            return count;
         }
+        alert(`${returnArrayCountGreaterThanY(testArray,y)} elements are greater than y`)
+
     </script>
-    
 </body>
 </html>
